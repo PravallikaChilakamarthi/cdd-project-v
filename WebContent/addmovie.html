@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CDD Project</title>
+<style>
+
+body{
+
+background-color:silver;
+
+}
+
+</style>
+
+</head>
+<body>
+ 	
+ 	<h1 align=center> <b>!! Recycling System!!</b></h1><hr>
+ 	<center>
+ 	<a href="superadminhome.html">Home</a>&nbsp;&nbsp;&nbsp;
+ 	<a href="addtheatres.html">Add Location</a>&nbsp;&nbsp;&nbsp;
+ 	<a href="addtmanager.html">Add Employee</a>&nbsp;&nbsp;&nbsp;
+ 	<a href="addmovie.html">Add Item</a>&nbsp;&nbsp;&nbsp;
+ 	<a href="viewcustomers">View Customers</a>&nbsp;&nbsp;&nbsp;
+ 	<a href="superadminlogin.html">log out</a>&nbsp;&nbsp;&nbsp;
+ 	
+ 	<h2 align=center>Add Item!</h2>
+	
+	
+	
+	<form method="post" action="addmovie">
+	
+	<fieldset style="width: 500px;height :350px">
+	<table align=center>
+
+		<tr>
+		<td> <input type="text" name="moviename" placeholder="Name" required></td>
+		</tr>
+		
+		
+		<tr>
+		<td><b>Type:</b>
+		<select name="Type" required multiple>
+		<option value="Plastic">Plastic</option>
+		<option value="Iron">Iron</option>
+		<option value="Paper">Paper</option>
+		<option value="Others">Others</option>
+		
+		
+		</select>
+		</td>
+		</tr>
+		
+		
+		
+
+		<tr>
+		<td> <input type="text" name="description" placeholder="Desription" required></td>
+		</tr>
+		
+	
+		
+		
+		<tr>		
+		<td align=center> <input type="submit" value="Add" ></td>
+		</tr>
+	
+	
+	</table>	
+	
+	
+	</fieldset>
+	</form>
+	</center>
+</body>
+</html>
