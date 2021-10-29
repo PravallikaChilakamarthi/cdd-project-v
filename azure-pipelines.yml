@@ -28,7 +28,8 @@ steps:
     pip install unittest-xml-reporting
   displayName: 'Install prerequisites'
 
-
+- script: |
+    python manage.py runserver
 
 
 - task: PythonScript@0
@@ -43,7 +44,7 @@ steps:
     script: |
 
     
-      print('This is a cdd project running')
+      print('This is a cdd project running ')
 
 
       print('completed successfully')
