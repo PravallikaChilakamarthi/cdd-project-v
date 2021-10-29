@@ -28,8 +28,8 @@ steps:
     pip install unittest-xml-reporting
   displayName: 'Install prerequisites'
 
-- script: |
-    python manage.py runserver
+ 
+ 
 
 
 - task: PythonScript@0
@@ -39,7 +39,9 @@ steps:
 
 
     scriptSource: 'inline'
-
+    web:
+     build: .
+     command: python manage.py runserver 0.0.0.0:8001
 
     script: |
 
